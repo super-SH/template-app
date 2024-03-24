@@ -14,9 +14,6 @@ function TipTapEditor({ onChange, content }: EditorProps) {
     extensions: [StarterKit],
     content,
     onUpdate({ editor }) {
-      console.log(editor.getJSON());
-      console.log(editor.getHTML());
-
       onChange(editor.getHTML());
     },
     editorProps: {
