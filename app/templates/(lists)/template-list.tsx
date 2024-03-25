@@ -36,7 +36,13 @@ function TemplateList() {
             >
               edit
             </button>
-            <button>filldata</button>
+            <button
+              onClick={() => {
+                router.push(`/templates/${template.id}`);
+              }}
+            >
+              filldata
+            </button>
           </div>
         </div>
       ))}
